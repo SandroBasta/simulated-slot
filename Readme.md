@@ -11,7 +11,7 @@ Files structure:
 src
 ├── app
 │   ├── Board.php
-          ├── Game.php
+│   ├── Game.php
 │   └── Console
 │       ├── Commands
 |       |   └── Slot.php

@@ -1,0 +1,17 @@
+version: '3.7'
+services:
+  app:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    image: simulated-slot
+    container_name: app
+    restart: unless-stopped
+    tty: true
+    stdin_open: true
+    volumes:
+      - ./src:/app
+networks:
+  default:
+    name: local-private
+    driver: bridge
